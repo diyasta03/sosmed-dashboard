@@ -1,0 +1,6 @@
+{
+  "name": "Social Media Performance Management & Analytics System",
+  "description": "Sistem analitik dan manajemen performa media sosial anggota (Instagram & TikTok) berbasis komisi, target KPI, perbandingan periode, dan insight otomatis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
