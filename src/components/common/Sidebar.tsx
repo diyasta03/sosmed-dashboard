@@ -47,13 +47,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'performance', label: 'Data Performa', icon: TableProperties },
     { id: 'rankings', label: 'Leaderboard & Skor', icon: Trophy },
-    { id: 'analytics', label: 'Tren & Korelasi', icon: LineChart },
     { id: 'comparison', label: 'Komparasi Periode', icon: GitCompare },
     { id: 'members', label: 'Anggota', icon: Users },
     { id: 'commissions', label: 'Komisi', icon: Building2 },
     { id: 'reports', label: 'Laporan Eksekutif', icon: FileSpreadsheet },
-    { id: 'data_quality', label: 'Kualitas Data', icon: ShieldCheck, badge: anomalyCount > 0 ? anomalyCount : undefined },
-    { id: 'settings', label: 'Pengaturan', icon: Settings },
   ];
 
   return (
@@ -79,9 +76,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
             <div>
               <h1 className="font-semibold text-sm text-white tracking-tight leading-tight">
-                Social Pulse
+                Social Media Dashbaord
               </h1>
-              <p className="text-[11px] text-slate-400 font-mono tracking-tight">Performance Intelligence</p>
+              <p className="text-[11px] text-slate-400 font-mono tracking-tight"></p>
             </div>
           </div>
           <button

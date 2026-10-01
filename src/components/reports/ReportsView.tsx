@@ -301,7 +301,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
           <div className="flex items-center gap-2">
             <BookOpen className="w-5 h-5 text-red-600" />
             <h3 className="font-bold text-sm text-slate-900">
-              Media Report DPR RI — Fraksi Partai Gerindra
+              Media Report DPR RI 
             </h3>
           </div>
           <p className="text-xs text-slate-500">
@@ -403,124 +403,8 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
 
       {/* DOCUMENT PAGES CONTAINER */}
       <div className="space-y-10 max-w-4xl mx-auto print:space-y-0 print:max-w-none print:w-full">
-        {/* ============================================================== */}
-        {/* PAGE 1: COVER PAGE                                             */}
-        {/* ============================================================== */}
-        {(activeSection === 'all' || activeSection === 'cover') && (
-          <div className="bg-white border border-slate-300 rounded-2xl overflow-hidden shadow-md print:border-none print:shadow-none print:break-after-page min-h-[920px] flex flex-col justify-between relative p-8 sm:p-14">
-            {/* Header branding */}
-            <div className="flex items-center justify-between border-b-2 border-slate-900 pb-4">
-              <div>
-                <span className="text-xs font-extrabold tracking-widest text-slate-900 uppercase block">
-                  FRAKSI PARTAI GERINDRA
-                </span>
-                <span className="text-[11px] text-slate-500 font-semibold tracking-wider uppercase">
-                  DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-full bg-red-700 text-white font-extrabold flex items-center justify-center text-xs shadow-2xs">
-                  G
-                </div>
-                <span className="font-extrabold text-xs text-red-700 tracking-tight">GERINDRA</span>
-              </div>
-            </div>
-
-            {/* Title Section */}
-            <div className="my-10 space-y-4">
-              <h1 className="text-5xl sm:text-6xl font-black text-slate-950 tracking-tight leading-none">
-                MEDIA<br />
-                REPORT<br />
-                DPR RI
-              </h1>
-              <div className="pt-2">
-                <span className="text-base sm:text-lg font-bold text-red-700 uppercase tracking-widest block">
-                  AUDIT & MONITORING
-                </span>
-                <p className="text-xs sm:text-sm text-slate-600 font-medium">
-                  Tahun Sidang 2025-2026 dan 2026-2027.
-                </p>
-              </div>
-            </div>
-
-            {/* Red Chamber Center Banner Illustration with Batik Cloud Motifs */}
-            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-b from-red-950 via-red-800 to-red-900 p-8 sm:p-12 text-center text-white my-6 shadow-inner flex flex-col items-center justify-center min-h-[280px]">
-              {/* Gold Batik motif corners */}
-              <div className="absolute top-2 left-3 text-amber-300 opacity-60 text-2xl select-none font-serif">
-                ༄
-              </div>
-              <div className="absolute top-2 right-3 text-amber-300 opacity-60 text-2xl select-none font-serif">
-                ༄
-              </div>
-              <div className="absolute bottom-2 left-3 text-amber-300 opacity-60 text-2xl select-none font-serif">
-                ༄
-              </div>
-              <div className="absolute bottom-2 right-3 text-amber-300 opacity-60 text-2xl select-none font-serif">
-                ༄
-              </div>
-
-              {/* Center Garuda Emblem Silhouette */}
-              <div className="w-20 h-20 rounded-full border-2 border-amber-300/40 bg-black/20 flex items-center justify-center mb-3">
-                <span className="text-amber-300 font-extrabold text-2xl">🇮🇩</span>
-              </div>
-
-              <span className="text-xs font-semibold tracking-widest text-amber-200 uppercase mb-1">
-                Laporan Kinerja Media Sosial Fraksi
-              </span>
-              <span className="text-4xl sm:text-5xl font-black tracking-wider text-white uppercase drop-shadow-md">
-                {monthMeta.upper}
-              </span>
-              <span className="text-xs text-red-200 mt-2 font-mono">
-                Audit Publikasi Instagram & TikTok Anggota
-              </span>
-            </div>
-
-            {/* Cover Footer */}
-            <div className="pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
-              <span>Sekretariat Fraksi Partai Gerindra DPR RI</span>
-              <span className="font-mono">Tahun Sidang 2025-2027</span>
-            </div>
-          </div>
-        )}
-
-        {/* ============================================================== */}
-        {/* PAGE 2: KATA PENGANTAR                                          */}
-        {/* ============================================================== */}
-        {(activeSection === 'all' || activeSection === 'cover') && (
-          <div className="bg-white border border-slate-300 rounded-2xl p-8 sm:p-14 shadow-md print:border-none print:shadow-none print:break-after-page min-h-[920px] flex flex-col justify-between">
-            <div>
-              <div className="text-center mb-10">
-                <h2 className="text-2xl font-black tracking-tight text-slate-900 uppercase">
-                  KATA PENGANTAR
-                </h2>
-                <div className="w-16 h-1 bg-red-700 mx-auto mt-2" />
-              </div>
-
-              <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed text-justify max-w-2xl mx-auto">
-                <p>
-                  Puji syukur ke hadirat Tuhan Yang Maha Esa atas rahmat dan karunia-Nya sehingga Laporan Bulanan Media Fraksi Partai Gerindra ini dapat disusun dengan baik.
-                </p>
-                <p>
-                  Laporan ini merupakan bentuk dokumentasi, evaluasi, dan pertanggungjawaban atas seluruh aktivitas media yang telah dilaksanakan selama satu bulan. Di dalamnya disajikan berbagai capaian publikasi, kinerja media sosial, pemberitaan, dokumentasi kegiatan, analisis performa konten, serta evaluasi dan rekomendasi sebagai dasar penyusunan strategi komunikasi pada periode berikutnya.
-                </p>
-                <p>
-                  Melalui laporan ini, diharapkan seluruh informasi yang disampaikan dapat memberikan gambaran yang komprehensif mengenai efektivitas pelaksanaan strategi komunikasi dan publikasi Fraksi Partai Gerindra dalam membangun keterbukaan informasi, memperkuat citra kelembagaan, serta meningkatkan kedekatan dengan masyarakat melalui berbagai platform media.
-                </p>
-                <p>
-                  Kami menyadari bahwa laporan ini masih memiliki ruang untuk penyempurnaan. Oleh karena itu, kritik dan saran yang konstruktif sangat diharapkan demi peningkatan kualitas pengelolaan media pada masa mendatang.
-                </p>
-                <p>
-                  Akhir kata, kami mengucapkan terima kasih kepada seluruh pihak yang telah memberikan dukungan dan kontribusi dalam pelaksanaan kegiatan media Fraksi Partai Gerindra. Semoga laporan ini dapat menjadi bahan evaluasi, referensi, dan pengambilan keputusan yang bermanfaat bagi pengembangan strategi komunikasi ke depan.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-right pt-8 border-t border-slate-100 max-w-2xl mx-auto w-full">
-              <p className="text-xs text-slate-600">Jakarta, {monthMeta.label}</p>
-              <p className="text-xs font-bold text-slate-900 mt-8">Tim Media Fraksi Partai Gerindra</p>
-            </div>
-          </div>
-        )}
+       
+              
 
         {/* ============================================================== */}
         {/* REKAPITULASI KELOMPOK KOMISI (HALAMAN 28 DARI PDF)              */}

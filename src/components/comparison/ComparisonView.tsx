@@ -113,20 +113,7 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({ performances }) 
 
   return (
     <div className="space-y-6">
-      {/* Transformation Callout solving the user's manual Excel headache */}
-      <div className="p-4 bg-emerald-50/80 border border-emerald-200 rounded-xl text-xs flex items-start gap-3">
-        <CheckCircle className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-        <div className="space-y-1">
-          <h4 className="font-semibold text-emerald-950">
-            Masalah Spreadsheet Terpecahkan: Komparasi 100% Otomatis
-          </h4>
-          <p className="text-slate-700 leading-relaxed">
-            Pada file Excel Anda sebelumnya terdapat catatan:{' '}
-            <em className="text-slate-800 font-medium">"Kolom BULAN LALU diisi manual (kuning) dari Grand Total laporan bulan sebelumnya karena tidak bisa diisi otomatis."</em>{' '}
-            Di sistem ini, Anda tidak perlu lagi copy-paste manual. Cukup pilih dua periode dan seluruh metrik, selisih (Δ), serta persentase perubahan langsung dikomputasi otomatis dari database historis.
-          </p>
-        </div>
-      </div>
+   
 
       {/* Selector bar */}
       <div className="bg-white border border-slate-200/90 rounded-xl p-4 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">

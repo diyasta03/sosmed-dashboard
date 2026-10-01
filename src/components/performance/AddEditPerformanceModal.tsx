@@ -339,48 +339,7 @@ export const AddEditPerformanceModal: React.FC<AddEditPerformanceModalProps> = (
             </div>
           </div>
 
-          {/* Mode Switcher when Posts > 1 */}
-          {posts > 1 && (
-            <div className="p-3 bg-indigo-50/80 border border-indigo-200 rounded-xl space-y-2">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div className="flex items-center gap-1.5 text-xs text-indigo-950 font-semibold">
-                  <Sparkles className="w-4 h-4 text-indigo-600 shrink-0" />
-                  <span>Lebih Dari 1 Posting Terdeteksi ({posts} Konten)</span>
-                </div>
-
-                <div className="flex items-center gap-1 p-0.5 bg-white border border-indigo-200 rounded-lg text-[11px]">
-                  <button
-                    type="button"
-                    onClick={() => setInputMode('breakdown')}
-                    className={`px-2.5 py-1 rounded-md font-medium transition-colors ${
-                      inputMode === 'breakdown'
-                        ? 'bg-indigo-600 text-white font-semibold'
-                        : 'text-slate-600 hover:text-slate-900'
-                    }`}
-                  >
-                    Rincian Per Konten (Auto-Sum)
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setInputMode('aggregate')}
-                    className={`px-2.5 py-1 rounded-md font-medium transition-colors ${
-                      inputMode === 'aggregate'
-                        ? 'bg-indigo-600 text-white font-semibold'
-                        : 'text-slate-600 hover:text-slate-900'
-                    }`}
-                  >
-                    Total Sekaligus
-                  </button>
-                </div>
-              </div>
-              <p className="text-[11px] text-indigo-800 leading-relaxed">
-                {inputMode === 'breakdown'
-                  ? 'Ketik views, likes, dan comments untuk masing-masing konten. Sistem akan menjumlahkannya secara otomatis ke total harian tanpa perlu kalkulator manual.'
-                  : 'Masukkan angka total langsung jika Anda sudah memiliki hasil penjumlahan.'}
-              </p>
-            </div>
-          )}
-
+        
           {/* MODE 1: BREAKDOWN PER POSTING (AUTO-SUM) */}
           {inputMode === 'breakdown' && (
             <div className="space-y-3">
